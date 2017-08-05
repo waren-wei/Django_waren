@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learning_logs',
     'pizza',
-    'users'
+    'users',
+
+    #第三方应用程序
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +126,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #我的设置
 LOGIN_URL = '/users/login/'
+
+#django-bootstrap3的设置
+BOOTSTRAP3 = {
+    'include_jquery':True,
+}
